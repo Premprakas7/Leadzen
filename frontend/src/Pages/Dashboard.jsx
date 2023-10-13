@@ -16,7 +16,7 @@ const Dashboard = () => {
   return (
     <div>
         {
-            data?.data.map((e)=><div key={e.id}>{e.title}</div>)
+            data?.data?.map((e)=><div key={e.id}>{e.title}</div>)
         }
 
       
