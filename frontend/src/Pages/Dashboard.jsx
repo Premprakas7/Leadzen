@@ -44,6 +44,7 @@ const Dashboard = () => {
                 <div>
                     <p className='title'>Title : {e.title}</p>
                     <p className='title'>Price : {e.price}₹</p>
+                    <p className='cat'>Category : {e.category}</p>
                 </div>
             </div>
         </div>)
