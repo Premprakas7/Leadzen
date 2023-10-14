@@ -9,7 +9,7 @@ const Dashboard = () => {
 
     useEffect(()=>{
         setLoading(true)
-        axios.get("http://localhost:5000/users")
+        axios.get("https://lead-i2xp.onrender.com/users")
         .then((res)=>setData(res.data),setLoading(false))
         .catch((err)=>console.log(err),setError(true))        
     },[])
