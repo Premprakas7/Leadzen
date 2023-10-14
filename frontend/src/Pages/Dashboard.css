@@ -1,0 +1,19 @@
+.box{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+}
+.image{
+    width: 10rem;
+    margin-top: 1rem;
+}
+.title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: teal;
+}
+.item{
+    border-style: solid;
+    margin: 1rem 1rem 1rem 1rem;
+    border-color: teal;
+}

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import "./Dashboard.css"
 
 const Dashboard = () => {
     const [data, setData]=useState();
@@ -14,14 +15,23 @@ const Dashboard = () => {
     },[])
     console.log(data)
   return (
-    <div>
+        <div >
+            <h1>Dashboard</h1>
+    
+    <div className='box' >
         {
-            data?.data?.map((e)=><div key={e.id}>{e.title}</div>)
+            data?.data?.map((e)=><div key={e.id} className='item'>
+            <div>
+                <img src={e.image} className="image" alt="" />
+                <div>
+                    <p className='title'>Title : {e.title}</p>
+                    <p className='title'>Price : {e.price}₹</p>
+                </div>
+            </div>
+        </div>)
         }
-
-      
     </div>
-  )
+    </div> )
 }
 
 export default Dashboard
