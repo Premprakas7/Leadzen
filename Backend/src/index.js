@@ -8,5 +8,4 @@ app.use(cors())
 app.use("/users",userController)
 
 
-
 module.exports=app;
